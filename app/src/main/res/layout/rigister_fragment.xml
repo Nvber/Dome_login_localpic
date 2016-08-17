@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alien.entertainment.login_interface.fragment.RigisterFragment">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/register_fragment_tv_username"
+            android:text="用户名:"
+            style="@style/TextViewStyle" />
+
+        <TextView
+            android:id="@+id/register_fragment_tv_password"
+            android:layout_below="@id/register_fragment_tv_username"
+            android:layout_alignRight="@id/register_fragment_tv_username"
+            android:text="密    码:"
+            style="@style/TextViewStyle" />
+
+        <EditText
+            android:id="@+id/register_ed_username"
+            android:hint="请输入用户名"
+            android:layout_toRightOf="@id/register_fragment_tv_username"
+            android:layout_alignBottom="@id/register_fragment_tv_username"
+            style="@style/EditViewStyle"
+            />
+        <EditText
+            android:id="@+id/register_ed_pwd"
+            android:hint="请输入密码"
+            android:layout_toRightOf="@+id/register_fragment_tv_password"
+            android:layout_alignBottom="@id/register_fragment_tv_password"
+            style="@style/EditViewStyle" />
+
+        <Button
+            android:id="@+id/register_btn_ok"
+            android:layout_below="@id/register_fragment_tv_password"
+            android:layout_centerHorizontal="true"
+            android:text="注册"
+            style="@style/ButtonStyle" />
+    </RelativeLayout>
+</LinearLayout>
